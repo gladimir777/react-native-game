@@ -1,0 +1,6 @@
+export const GET_DATA_INIT = "GET_DATA_INIT";
+export const GET_DATA_SUCCES = "GET_DATA_SUCCES";
+export const GET_DATA_FAILURE = "GET_DATA_FAILURE";
+export const IS_JQUERY_CLICKED = "IS_JQUERY_CLICKED";
+export const GET_HI_SCORE = "GET_HI_SCORE";
+export const RESET_SCORE = "RESET_SCORE";
