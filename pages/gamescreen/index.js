@@ -79,7 +79,9 @@ class GameScreen extends Component {
             </Text>
           </View>
           <View style={styles.counter}>
-            <Text style={styles.counterLabel}>{this.state.counter}</Text>
+            <Text style={styles.counterLabel}>
+              {this.state.counter == 60 ? "1:00" : this.state.counter}
+            </Text>
           </View>
         </View>
       </View>
