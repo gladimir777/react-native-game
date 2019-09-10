@@ -11,6 +11,15 @@ class GameOverScreen extends Component {
     super(props);
     this.state = {};
   }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (
+      parseInt(prevProps.navigation.getParam("score", "10")) !==
+      this.props.gameData.score
+    ) {
+      this.props.navigation.navigate("home");
+    }
+  }
   componentDidMount() {
     this.props.jqueryFinderActions.getHiScore();
     this.clearScore = setInterval(

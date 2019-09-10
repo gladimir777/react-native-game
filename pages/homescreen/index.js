@@ -22,8 +22,6 @@ class HomeScreen extends Component {
     navigate("gameScreen");
   };
   render() {
-    console.log("hi score", this.props.gameData);
-
     return (
       <View style={styles.container}>
         <Text style={styles.btn}>jQuery Finder</Text>

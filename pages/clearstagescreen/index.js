@@ -21,8 +21,18 @@ class ClearStageScreen extends Component {
     );
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if (
+      parseInt(prevProps.navigation.getParam("score", "10")) !==
+      this.props.gameData.score
+    ) {
+      this.props.navigation.navigate("home");
+    }
+  }
+
   componentWillUnmount() {
     clearInterval(this.clearScore);
+    this.props.navigation.popToTop();
   }
   render() {
     return (

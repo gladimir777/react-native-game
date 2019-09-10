@@ -30,11 +30,11 @@ class GameScreen extends Component {
     if (prevState.counter == 0) {
       clearInterval(this.clock);
       clearInterval(this.indexGenarator);
-      const { navigate } = this.props.navigation;
+      const { navigate, goBack } = this.props.navigation;
       if (this.props.gameData.score < 55) {
         navigate("gameOverScreen", { score: this.props.gameData.score });
       } else {
-        navigate("clearStageScreen");
+        navigate("clearStageScreen", { score: this.props.gameData.score });
       }
     }
   }
@@ -49,12 +49,7 @@ class GameScreen extends Component {
   genarateIndex = () => {
     return Math.floor(Math.random() * 3);
   };
-
-  handlePress = obj => {
-    console.log("presssss", obj.target.item);
-  };
   render() {
-    console.log(this.props.gameData);
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Find it!</Text>
