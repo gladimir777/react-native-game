@@ -47,9 +47,7 @@ class ClearStageScreen extends Component {
           <Text style={styles.title}>Write less, do more.</Text>
         </View>
 
-        <View style={styles.copyRightContainer}>
-          <Text style={styles.copyRightLabel}>Copyright Cleverit</Text>
-        </View>
+        <View style={styles.copyRightContainer}></View>
       </View>
     );
   }

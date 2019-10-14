@@ -38,9 +38,7 @@ class HomeScreen extends Component {
         <View>
           <Text style={styles.score}>{this.props.gameData.hiScore}</Text>
         </View>
-        <View style={styles.copyRightContainer}>
-          <Text style={styles.copyRightLabel}>Copyright Cleverit</Text>
-        </View>
+        <View style={styles.copyRightContainer}></View>
       </View>
     );
   }

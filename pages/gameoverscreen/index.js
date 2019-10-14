@@ -47,9 +47,7 @@ class GameOverScreen extends Component {
         <View>
           <Text style={styles.title}>Score</Text>
         </View>
-        <View style={styles.copyRightContainer}>
-          <Text style={styles.copyRightLabel}>Copyright Cleverit</Text>
-        </View>
+        <View style={styles.copyRightContainer}></View>
       </View>
     );
   }
